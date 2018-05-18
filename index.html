@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Good to Eat | Welcome</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	
+</head>
+
+<body>
+
+	<header>
+		<nav class="wrapper">
+			<ul>
+				<li><a href="index.html" class="active">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="cheeses.html">Cheeses</a></li>
+				<li><a href="meats.html">Meats</a></li>
+				<li><a href="provisions.html">Provisions</a></li>
+				<li><a href="findus.html">Find Us</a></li>
+			</ul>
+			<div class="shopping-cart">
+				<a href="#">
+					<i class="fas fa-shopping-cart"></i>
+					<!--<span>0</span>-->
+				</a>
+			</div>
+		</nav>
+	</header>
+	
+	<main>
+	
+	<!-- BANNER -->
+		<section id="banner">
+			<div class="banner-grid">
+				<div class="grid-wrapper">
+					<div id="grid-logo">
+						<h1 class="logo">
+							<span>Good</span>
+							<span>to</span>
+							<span>Eat</span>
+						</h1>
+					</div>
+					<div id="grid-text">
+						<p>Savouries and sweets for the gourmet in all of us</p>
+					</div>
+					<div id="grid-sketch">
+						<img src="img/cake-sketch.png">
+					</div>
+					<div id="grid-shopping">
+						<a href="cheeses.html"><span>Start Shopping <i class="fas fa-angle-right"></i></span></a>
+					</div>
+				</div>
+			</div>
+			
+			<div id="banner-images">
+				<img id="slider-active" src="img/slider/berries-cake.jpg">
+				<img src="img/slider/almond-cake.jpg">
+				<img src="img/slider/berries-pie.jpg">
+				<img src="img/slider/pie.jpg">
+				<img src="img/slider/ice-cream.jpg">
+				<!--<img class="slider-image" src="img/slider/muffin.jpg">-->
+				<!--<img class="slider-image" src="img/slider/pink-cake.jpg">-->
+			</div>
+			
+			<div id="banner-progress">
+				<div onClick="changeImage(0)" id="progress-active"></div>
+				<div onClick="changeImage(1)"></div>
+				<div onClick="changeImage(2)"></div>
+				<div onClick="changeImage(3)"></div>
+				<div onClick="changeImage(4)"></div>
+				<!--<div onClick="changeImage(5)"></div>
+				<div onClick="changeImage(6)"></div>-->
+			</div>
+			
+		</section>
+		
+		<!-- SPECIALS -->
+		
+		<section id="specials">
+			<div class="wrapper">
+				<h2>Have a Look at Our Specials</h2>
+				<div>
+					
+				</div>
+			</div>
+		</section>
+	</main>
+	
+	<script src="script.js"></script>
+
+
+</body>
+</html>

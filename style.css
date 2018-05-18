@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700|Satisfy');
+
+/*
+font-family: 'Satisfy', cursive;
+font-family: 'Oswald', sans-serif;
+*/
+
+/*
+light grey: #fcfcfc
+black: #111
+georgia peach: #fd7272
+wild watermelon: #ff6b81;
+*/
+
+/*
+CSS Grid: https://css-tricks.com/snippets/css/complete-guide-grid/
+Pie sketch: https://cdn.pixabay.com/photo/2012/04/12/13/59/slice-30143_960_720.png
+*/
+
+body {
+	font-family: 'Oswald', sans-serif;
+	color: #111;
+	background-color: #fff;
+	font-size: 20px;
+}
+
+.wrapper {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+a {
+	color: #111;
+	text-decoration: none;	
+}
+
+/*************************************************
+					HEADER
+*************************************************/
+
+header {
+	background-color: #fcfcfc;
+	position: fixed;
+	z-index: 100;
+	width: 100%;
+	top: 0%;
+}
+
+nav {
+	display: flex;
+	box-sizing: border-box;
+	justify-content: space-between;
+	min-height: 90px;
+	padding: 12px 0 0px;
+}
+
+nav ul {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+nav ul li a {
+	display: block;
+	padding: 25px 50px;
+	border-top: 1px solid #111;
+}
+
+nav ul li a:hover {
+	border-top: 4px solid #ff6b81;
+	padding-top: calc(25px - 3px);
+	color: #ff6b81;
+}
+
+nav ul li a.active {
+	border-top: 4px solid #111;
+	padding-top: calc(25px - 3px);
+	color: #111;
+}
+
+nav .shopping-cart {
+	margin-top: 18px;
+	font-size: 30px;
+}
+
+/*nav .shopping-cart a {
+	position: relative;
+}
+
+nav .shopping-cart span {
+	position: absolute;
+	font-size: 10px;
+	color: #fcfcfc;
+	top: 36.5%;
+	left: 53%;
+}*/
+
+
+
+main {
+	margin-top: 90px;
+}
+
+/*************************************************
+					BANNER
+*************************************************/
+
+#banner {
+	/*background: url("img/slider/almond-cake.jpg");
+	-webkit-transition: background 2s ease-in-out;
+  	-moz-transition: background 2s ease-in-out;
+  	-o-transition: background 2s ease-in-out;
+  	transition: background 2s ease-in-out;*/
+	
+	height: 800px;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+
+#banner-images {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+#banner-images img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: opacity 1s ease-in-out;
+}
+
+#banner-images img#slider-active {
+	opacity: 1;
+}
+
+#banner-images img:not(#slider-active) {
+	opacity: 0;
+}
+
+#banner-progress {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}
+
+#banner-progress > div {
+	display: inline-block;
+	box-sizing: border-box;
+	/*border: 3px solid #fcfcfc;*/
+	background-color: #fcfcfc;
+	width: 14px;
+	height: 14px;
+	margin: 0 2px 20px;
+	border-radius: 50%;
+	transition: background-color 0.5s ease-in-out;
+}
+
+#banner-progress > div:hover {
+	cursor: pointer;
+}
+
+#banner-progress > div#progress-active {
+	background-color: #111;
+}
+	
+
+
+/*************************************************
+					GRID
+*************************************************/
+
+.banner-grid {
+	z-index: 1;
+	background-color: #fcfcfc;
+	opacity: .90;
+	position: absolute;
+	left: calc(50% - 842px / 2);
+	top: calc(50% - 322px / 2);
+}
+
+.grid-wrapper {
+	width: 800px;
+	display: grid;
+	grid-template-columns: 1.6fr 1fr 1.6fr;
+	grid-template-rows: 150px 130px;
+	text-align: center;
+	
+	margin: 20px;
+	border: 1px solid #111;
+}
+
+.grid-wrapper > div {
+	border: 1px solid #111;
+	display: grid;
+	place-items: center;
+}
+
+#grid-logo {
+	grid-column: 1 / span 3;
+}
+
+#grid-text {
+	padding: 0 20px;
+}
+
+#grid-sketch img {
+	object-fit: contain;
+  	width: 75%;
+  	max-height: 75%;
+}
+
+.grid-wrapper > div#grid-shopping {
+	display: block;
+	background-color: #111;
+	place-self: stretch;
+}
+
+#grid-shopping a {
+	color: #fcfcfc;
+	display: grid;
+	height: 100%;
+	justify-items: center;
+	align-items: center;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+#grid-shopping a:hover {
+	background-color: #fcfcfc;
+	color: #111;
+}
+
+.logo {
+	font-size: 70px;
+	letter-spacing: 3px;
+}
+
+.logo :first-child, .logo :last-child {
+	text-transform: uppercase;
+}
+
+.logo :nth-child(2) {
+	font-family: 'Satisfy', cursive;
+}
+	
+	
+
