@@ -15,12 +15,18 @@ wild watermelon: #ff6b81
 /*
 CSS Grid: https://css-tricks.com/snippets/css/complete-guide-grid/
 Pie sketch: https://cdn.pixabay.com/photo/2012/04/12/13/59/slice-30143_960_720.png
+
+- add transition for opacity hover
 */
+
+/*************************************************
+					GENERAL
+*************************************************/
 
 body {
 	font-family: 'Oswald', sans-serif;
 	color: #111;
-	background-color: #fff;
+	background-color: #fcfcfc;
 	font-size: 20px;
 }
 
@@ -114,7 +120,9 @@ main {
   	-o-transition: background 2s ease-in-out;
   	transition: background 2s ease-in-out;*/
 	
-	height: 800px;
+	min-height: 500px;
+	max-height: 800px;
+	height: calc(100vh - 90px);
 	width: 100%;
 	background-size: cover;
 	background-position: center;
@@ -208,6 +216,7 @@ main {
 
 #grid-text {
 	padding: 0 20px;
+	line-height: 26px;
 }
 
 #grid-sketch img {
@@ -251,7 +260,7 @@ main {
 }
 
 /*************************************************
-					FOOTER
+					SPECIALS
 *************************************************/
 
 #specials img {
@@ -399,7 +408,7 @@ footer form button {
 	margin-top: 5px;
 	background-color: #ff6b81;
 	color: #fcfcfc;	
-	font-weight: 500;
+	font-weight: 400;
 }
 
 footer form button:hover {
